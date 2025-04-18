@@ -14,6 +14,7 @@ This repository contains a lightweight Retrieval-Augmented Generation (RAG) agen
 6. [PDF Ingestion & Indexing](#pdf-ingestion--indexing)  
 7. [Running the Service](#running-the-service)  
 8. [Usage](#usage)  
+9. [Testing](#Testing)
 
 ---
 
