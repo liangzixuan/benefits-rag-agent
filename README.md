@@ -7,14 +7,13 @@ This repository contains a lightweight Retrieval-Augmented Generation (RAG) agen
 ## Table of Contents
 
 1. [Overview](#overview)  
-2. [Prerequisites](#prerequisites)  
-3. [Installation](#installation)  
-4. [Configuration](#configuration)  
-5. [PDF Ingestion & Indexing](#pdf-ingestion--indexing)  
-6. [Running the Service](#running-the-service)  
-7. [Usage](#usage)  
-8. [Architecture](#architecture)  
-9. [Next Steps](#next-steps)  
+2. [Architecture](#architecture) 
+3. [Prerequisites](#prerequisites)  
+4. [Installation](#installation)  
+5. [Configuration](#configuration)  
+6. [PDF Ingestion & Indexing](#pdf-ingestion--indexing)  
+7. [Running the Service](#running-the-service)  
+8. [Usage](#usage)  
 
 ---
 
@@ -23,6 +22,11 @@ This repository contains a lightweight Retrieval-Augmented Generation (RAG) agen
 - **Ingestion**: Reads all PDFs in `./pdfs`, splits them into overlapping text chunks.  
 - **Embedding & Indexing**: Uses OpenAI’s `text-embedding-ada-002` to vectorize chunks and builds a FAISS index for cosine-similarity search.  
 - **Query**: Embeds user queries, retrieves top‑K relevant chunks via FAISS, then calls ChatGPT (`gpt-3.5-turbo`) with the retrieved context to generate precise answers.  
+
+---
+
+## Architecture
+![Architecture](https://github.com/liangzixuan/benefits-rag-agent/blob/main/architecture.png)
 
 ---
 
@@ -86,5 +90,3 @@ Response format:
 }
 ```
 
-## Architecture
-![Architecture](https://github.com/liangzixuan/benefits-rag-agent/blob/main/architecture.png)
