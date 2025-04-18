@@ -87,3 +87,4 @@ Response format:
 ```
 
 ## Architecture
+![Architecture](https://github.com/liangzixuan/benefits-rag-agent/blob/main/architecture.png)
