@@ -90,3 +90,7 @@ Response format:
 }
 ```
 
+## Testing
+Run the `run_benefits_agent_tests.sh`, it will ask the agent 24 different questions across 12 different topics. The query result then will be displayed in terminal output, and saved to a `.log` file.
+
+![test-result](https://github.com/liangzixuan/benefits-rag-agent/blob/main/test_results_screenshot.png)
