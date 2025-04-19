@@ -115,6 +115,6 @@ Creates a real appointment in my Google Calendar.
 `test_main.py` has the unit tests that cover our `main.py` code.
 
 ## End-to-end Testing
-Run the `run_benefits_agent_tests.sh`, it will ask the agent 24 different questions across 12 different topics. The query result then will be displayed in terminal output, and saved to a `.log` file.
+Run the `run_benefits_agent_tests.sh`, it will ask the agent 24 different questions across 12 different topics and also 3 questions that will trigger 3 different agent tools (lookup/calculator/schedule appointment). The query result then will be displayed in terminal output, and saved to a `.log` file.
 
 ![test-result](https://github.com/liangzixuan/benefits-rag-agent/blob/main/test_results_screenshot.png)
