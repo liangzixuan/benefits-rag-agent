@@ -13,8 +13,9 @@ This repository contains a lightweight Retrieval-Augmented Generation (RAG) agen
 5. [Configuration](#configuration)  
 6. [PDF Ingestion & Indexing](#pdf-ingestion--indexing)  
 7. [Running the Service](#running-the-service)  
-8. [Usage](#usage)  
-9. [Testing](#Testing)
+8. [Usage](#usage)
+9. [Built-in Tools](#built-in-tools)  
+10. [Testing](#Testing)
 
 ---
 
@@ -90,6 +91,25 @@ Response format:
   "sources": ["file1.pdf","file2.pdf",...]
 }
 ```
+
+## Built-in Tools
+The agent can now call the following tools using OpenAI function calling:
+1. `lookup_benefit_term(term)` 
+Looks up benefit definitions from an internal glossary.
+```bash
+{ "term": "HSA" }`
+```
+2. `calculate_benefit_cost(plan_type, monthly_premium, deductible)`
+Estimates the annual cost of a health plan.
+```bash
+{ "plan_type": "PPO", "monthly_premium": 350, "deductible": 1000 }
+```
+3. `schedule_appointment(date, time, reason)`
+Creates a real appointment in my Google Calendar.
+```bash
+{ "date": "2025-04-20", "time": "14:00", "reason": "Benefits consultation" }
+```
+
 
 ## Testing
 Run the `run_benefits_agent_tests.sh`, it will ask the agent 24 different questions across 12 different topics. The query result then will be displayed in terminal output, and saved to a `.log` file.
