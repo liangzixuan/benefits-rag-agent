@@ -35,11 +35,14 @@ TOPICS=(
   "CA Disability / Paid Family Leave"
   "Long-Term Disability (LTD)"
   "Long-Term Disability (LTD)"
+  "OpenAI Function Calling - Look Up Benefit Term"
+  "OpenAI Function Calling - Calculate Benefit Cost"
+  "OpenAI Function Calling - Schedule Appointment"
 )
 
 QUESTIONS=(
   "What are the two rollover options when transferring funds into the Oracle 401(k) Plan?"
-  "How should a check be made out for a rollover into Fidelity for Oracle’s plan?"
+  "How should a check be made out for a rollover into Fidelity for Oracle's plan?"
   "How is 'Disability' defined in the Oracle STD Benefit Plan?"
   "What is the elimination period before STD benefits begin?"
   "Which preventive medications are covered before meeting the deductible in 2025?"
@@ -48,8 +51,8 @@ QUESTIONS=(
   "How can Oracle employees access Calm or Calm Health for mental well-being?"
   "What does Oracle's Wellhub program include and how do employees sign up?"
   "What is included in the free Starter Plan for Wellhub offered by Oracle?"
-  "What are the key deadlines and actions required during Oracle’s 2025 Open Enrollment?"
-  "What happens if I don’t take any action during the open enrollment period?"
+  "What are the key deadlines and actions required during Oracle's 2025 Open Enrollment?"
+  "What happens if I don't take any action during the open enrollment period?"
   "What financial planning services does Oracle offer through Ayco and Fidelity?"
   "How can employees schedule a one-on-one retirement consultation with Fidelity?"
   "What are the benefits enrollment deadlines for new Oracle employees?"
@@ -57,11 +60,14 @@ QUESTIONS=(
   "What types of family status changes allow me to update Oracle benefit elections mid-year?"
   "If I have a child, how soon must I report the birth to update my benefits?"
   "What are the biweekly premium costs for the HSA Medical Plan for full-time employees in 2025?"
-  "How do benefit deductions change with Oracle’s switch to biweekly pay in 2025?"
+  "How do benefit deductions change with Oracle's switch to biweekly pay in 2025?"
   "What is the waiting period for receiving CA Voluntary Disability benefits?"
-  "How does Paid Family Leave differ from Disability benefits in Oracle’s California VDI plan?"
+  "How does Paid Family Leave differ from Disability benefits in Oracle's California VDI plan?"
   "Does LTD coverage vary by state, and where can employees find state-specific notices?"
   "What medical conditions count as 'Complications of Pregnancy' under California LTD law?"
+  "What's an HSA?"
+  "How much will a PPO with $300 premium and $1000 deductible cost me yearly?"
+  "Book a plan consultation on 2025-04-20 at 14:00 for dental benefits"
 )
 
 echo "📋 Oracle Benefits RAG Agent Test — $(date)" | tee -a "$LOG_FILE"
