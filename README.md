@@ -14,8 +14,9 @@ This repository contains a lightweight Retrieval-Augmented Generation (RAG) agen
 6. [PDF Ingestion & Indexing](#pdf-ingestion--indexing)  
 7. [Running the Service](#running-the-service)  
 8. [Usage](#usage)
-9. [Built-in Tools](#built-in-tools)  
-10. [Testing](#Testing)
+9. [Built-in Agent Tools](#built-in-tools)
+10. [Unit Test](#unit-test)  
+11. [Agent End-to-End Testing](#end-to-end-testing)
 
 ---
 
@@ -92,7 +93,7 @@ Response format:
 }
 ```
 
-## Built-in Tools
+## Built-in Agent Tools
 The agent can now call the following tools using OpenAI function calling:
 1. `lookup_benefit_term(term)` 
 Looks up benefit definitions from an internal glossary.
@@ -110,8 +111,10 @@ Creates a real appointment in my Google Calendar.
 { "date": "2025-04-20", "time": "14:00", "reason": "Benefits consultation" }
 ```
 
+## Unit Test
+`test_main.py` has the unit tests that cover our `main.py` code.
 
-## Testing
+## End-to-end Testing
 Run the `run_benefits_agent_tests.sh`, it will ask the agent 24 different questions across 12 different topics. The query result then will be displayed in terminal output, and saved to a `.log` file.
 
 ![test-result](https://github.com/liangzixuan/benefits-rag-agent/blob/main/test_results_screenshot.png)
